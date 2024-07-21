@@ -1,1 +1,1 @@
-// export * from './listadocitas';
+export * from "./listadocitas";

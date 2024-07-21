@@ -1,7 +1,5 @@
-// import React from "react";
-
-// function listadocitas() {
-//   return;
-//   <div>listadocitas</div>;
-// }
-// export default listadocitas;
+import React from "react";
+function listadocitas() {
+  return <div>listado</div>;
+}
+export default listadocitas;
