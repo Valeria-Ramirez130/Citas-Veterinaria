@@ -1,4 +1,3 @@
-// Componente NavbarGlobal.jsx
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import iconoveterinario from "../../img/iconoveterinario.png";
@@ -7,7 +6,7 @@ import "./NavbarGlobal.css";
 export default function NavbarGlobal() {
   return (
     <div className="container-navbar">
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <Link className="navbar-brand" to="/">
           <img
             src={iconoveterinario}
@@ -18,8 +17,8 @@ export default function NavbarGlobal() {
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -28,7 +27,7 @@ export default function NavbarGlobal() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item active">
+            <li className="nav-item">
               <Link className="nav-link" to="/">
                 Inicio
               </Link>

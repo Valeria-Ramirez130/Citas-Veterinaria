@@ -6,16 +6,9 @@ import NavbarGlobal from "../components/NavbarGlobal/NavbarGlobal.jsx";
 
 export const routesglobal = [
   {
-    /* Aqui esto se hace para que la navbar sea como el componente padre de todas las rutas
-    por esto, se pone una lista de children, para indicar que las rutas que estan dentro de esta
-    */
     path: "/",
     element: <NavbarGlobal />,
     children: [
-      {
-        path: "*",
-        element: <Error404 />,
-      },
       {
         path: "/",
         element: <Inicio />,
@@ -30,4 +23,13 @@ export const routesglobal = [
       },
     ],
   },
+  // Ruta para manejar cualquier otra URL no definida
+  {
+    path: "*",
+    element: <Error404 />,
+  },
 ];
+
+/* Aqui esto se hace para que la navbar sea como el componente padre de todas las rutas
+    por esto, se pone una lista de children, para indicar que las rutas que estan dentro de esta
+    */
