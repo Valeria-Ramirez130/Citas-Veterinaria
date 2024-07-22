@@ -5,7 +5,7 @@ import "./inicio.css"; // Importa el archivo de estilos
 function Inicio() {
   return (
     <div className="inicio-container">
-      <img src={imgInicio} alt="Imagen de Inicio" className="inicio-img" />
+      {<img src={imgInicio} alt="Imagen de Inicio" className="inicio-img" />}
     </div>
   );
 }

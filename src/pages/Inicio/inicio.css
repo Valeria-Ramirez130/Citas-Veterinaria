@@ -1,21 +1,41 @@
-/* Asegura que el contenedor ocupe todo el ancho y alto de la pantalla */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ajusta el contenedor para que esté justo debajo de la navbar */
 .inicio-container {
-    width: 100vw; /* Ancho completo de la ventana */
-    height: 100vh; /* Alto completo de la ventana */
-    overflow: hidden; /* Oculta el desbordamiento si la imagen es más grande */
-    position: relative; /* Necesario para posicionar la imagen */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Estilo para la imagen */
-  .inicio-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra el contenedor manteniendo la proporción */
-  }
-  
+  width: 100vw; /* Ancho completo de la ventana */
+  height: calc(100vh - 60px); /* Altura de la ventana menos la altura de la navbar */
+  overflow: hidden; /* Oculta cualquier desbordamiento */
+  position: relative; /* Necesario para posicionar la imagen */
+  margin-top: 0; /* Elimina el margen para acercar el contenedor a la navbar */
+  box-sizing: border-box; /* Asegura que el padding y el border no afecten el ancho y la altura del contenedor */
+}
+
+/* Estilo para la imagen */
+.inicio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cubre el contenedor manteniendo la proporción */
+  object-position: center; /* Centra la imagen */
+  position: absolute; /* Asegura que la imagen esté alineada dentro del contenedor */
+  top: 0;
+  left: 0;
+  z-index: 0; /* La imagen debe estar debajo del pseudo-elemento */
+}
+
+/* Capa negra con opacidad sobre la imagen */
+.inicio-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Fondo negro con 50% de opacidad */
+  z-index: 1; /* Asegúrate de que la capa negra esté sobre la imagen */
+}
