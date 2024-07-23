@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
-  background:  rgba(135, 206, 235, 0.8) /* Gradiente de azul cielo a transparente */
+  background-color: rgba(174, 214, 241 , 0.7); /* Color azul con 70% de opacidad */
 }
 
 /* Ajusta el contenido de la navbar */
@@ -15,7 +15,7 @@
 
 /* Ajusta el color del texto de los enlaces de la navbar */
 .navbar-nav .nav-link {
-  color: #000 !important; /* Fuerza el color negro para los enlaces */
+  color: #000000 !important; /* Color del texto con opacidad */
 }
 
 /* Estilo para el logotipo de la navbar */

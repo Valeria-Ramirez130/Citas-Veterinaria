@@ -1,0 +1,20 @@
+/* Aplica Quicksand a todo el cuerpo del documento */
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400; /* Peso por defecto */
+}
+
+/* Clase para texto en negrita */
+.bold-text {
+  font-weight: 700; /* Usa la fuente en negrita */
+}
+
+/* Clase para texto en peso medio */
+.medium-text {
+  font-weight: 500; /* Usa la fuente en peso medio */
+}
+
+/* Clase para texto en peso semi-negrita */
+.semi-bold-text {
+  font-weight: 600; /* Usa la fuente en semi-negrita */
+}
