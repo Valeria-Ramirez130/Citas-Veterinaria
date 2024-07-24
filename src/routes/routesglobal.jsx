@@ -17,10 +17,6 @@ export const routesglobal = [
         path: "/citas",
         element: <Citas />,
       },
-      {
-        path: "/listado-de-citas",
-        element: <Listadocitas />,
-      },
     ],
   },
   // Ruta para manejar cualquier otra URL no definida

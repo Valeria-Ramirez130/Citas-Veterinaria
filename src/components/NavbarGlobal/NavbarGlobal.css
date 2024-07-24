@@ -1,25 +1,88 @@
+/* navbar-global.css */
+
+/* Contenedor de la navbar */
+.container-navbar {
+  position: relative;
+  width: 100%;
+}
+
 /* Asegura que la navbar ocupe todo el ancho de la pantalla */
 .navbar {
+  padding: 10px 15px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  background-color: rgba(174, 214, 241 , 0.7); /* Color azul con 70% de opacidad */
+  background-color: rgba(174, 214, 241, 0.7); /* Color azul con 70% de opacidad */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Ajusta el contenido de la navbar */
 .navbar-brand, .navbar-nav .nav-link {
-  padding: 15px 20px;
+  padding: 5px;
 }
 
 /* Ajusta el color del texto de los enlaces de la navbar */
 .navbar-nav .nav-link {
-  color: #000000 !important; /* Color del texto con opacidad */
+  color: #000000 !important;
 }
 
 /* Estilo para el logotipo de la navbar */
 .navbar-logo {
-  height: 60px; /* Aumenta la altura del logotipo */
-  width: auto;  /* Mantiene la proporción de aspecto de la imagen */
+  height: 50px; /* Aumenta la altura del logotipo */
+  width: auto;
+}
+
+/* Estilo para el botón "Entrar" */
+.navbar-btn {
+  background-color: #3498db; /* Color de fondo del botón */
+  border: none;
+  color: #ffffff; /* Color del texto */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  margin-left: auto; /* Asegura que esté a la derecha */
+  position: absolute; /* Para permitir la alineación */
+  right: 15px; /* Ajusta la posición desde el borde derecho */
+}
+
+/* Cambia el color del botón al pasar el mouse */
+.navbar-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Estilos para el menú desplegable */
+.navbar-nav .dropdown-menu {
+  background-color: rgba(174, 214, 241, 1);
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 12px;
+    background-color: rgba(174, 214, 241, 0.3);
+  }
+
+  .navbar-logo {
+    height: 25px; /* Ajusta la altura del logotipo para dispositivos móviles */
+  }
+
+  /* Ajusta el fondo del menú desplegable en dispositivos móviles */
+  .navbar-nav .dropdown-menu {
+    background-color: rgba(174, 214, 241, 1);
+  }
+
+  .navbar-btn {
+    position: relative; /* Cambiar a relativo en móviles */
+    right: 0;
+    margin-left: auto;
+  }
 }

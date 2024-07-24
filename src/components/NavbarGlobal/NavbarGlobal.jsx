@@ -37,13 +37,10 @@ export default function NavbarGlobal() {
                 Citas
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/listado-de-citas">
-                Listado de citas
-              </Link>
-            </li>
           </ul>
         </div>
+        <button className="navbar-btn">Entrar</button>{" "}
+        {/* Moved outside the collapse */}
       </nav>
       <section>
         <Outlet />
