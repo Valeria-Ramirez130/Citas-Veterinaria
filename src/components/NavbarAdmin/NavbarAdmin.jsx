@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import iconoveterinario from "../../img/iconoveterinario.png";
-import "./NavbarGlobal.css";
+import "./NavbarAdmin.css"; // Importar los estilos
 
-export default function NavbarGlobal() {
+export default function NavbarAdmin() {
   return (
     <div className="container-navbar">
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -33,14 +33,15 @@ export default function NavbarGlobal() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/citas">
-                Citas
+              <Link className="nav-link" to="listado-citas">
+                Listado Citas
               </Link>
             </li>
           </ul>
+          <Link to="/" className="navbar-btn-salir">
+            Salir
+          </Link>
         </div>
-        <button className="navbar-btn">Entrar</button>{" "}
-        {/* Moved outside the collapse */}
       </nav>
       <section>
         <Outlet />
@@ -48,8 +49,3 @@ export default function NavbarGlobal() {
     </div>
   );
 }
-
-/* 
-  Se agrega el outlet para que se renderice el componente que corresponda a la ruta.
-  Es decir, si la ruta es /citas, se renderiza el componente que se indique en la routesGlobal.
-*/

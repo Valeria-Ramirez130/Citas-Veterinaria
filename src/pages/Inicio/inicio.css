@@ -20,7 +20,7 @@ body.inicio-active .main-container {
 .inicio-container {
   flex: 1;
   width: 99,5vw; /* Ancho completo de la ventana */
-  height: calc(100vh - 60px); /* Altura de la ventana menos la altura de la navbar */
+  height: calc(99.2vh - 60px); /* Altura de la ventana menos la altura de la navbar */
   overflow: hidden; /* Oculta cualquier desbordamiento */
   position: relative; /* Necesario para posicionar la imagen */
   margin-top: 0px; /* Elimina el margen para acercar el contenedor a la navbar */

@@ -1,1 +1,2 @@
-export * from "./NavbarGlobal";
+export * from "./NavbarClient";
+export * from "./NavbarAdmin";

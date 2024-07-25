@@ -1,0 +1,34 @@
+/* Solo aplica los estilos de centrar en la página de login */
+.login-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+/* Estilo para el formulario en general */
+.login-form {
+    max-width: 600px; /* Tamaño más ancho para pantallas grandes */
+    padding: 40px; /* Aumenta el padding para asegurar espacio suficiente */
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Asegura que el formulario ocupe el ancho completo hasta el máximo establecido */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+}
+
+/* Asegúrate de que el botón tenga el color de fondo correcto y el box-shadow deseado */
+.btn-custom {
+    background-color: #56baed !important;
+    border-color: #56baed;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Ajusta el tamaño de los campos de entrada */
+.login-form .form-control {
+    width: 100%; /* Asegura que los campos de entrada usen el 100% del ancho del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho */
+}
