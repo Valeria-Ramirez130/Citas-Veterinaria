@@ -4,7 +4,6 @@ import Error404 from "../pages/Error404.jsx";
 import Listadocitas from "../pages/ListadoCitas/listadocitas.jsx";
 import NavbarClient from "../components/NavbarClient/NavbarClient.jsx";
 import NavbarAdmin from "../components/NavbarAdmin/NavbarAdmin.jsx";
-import PageAdmin from "../pages/PageAdmin/admin.jsx"; // Asegúrate de que la importación sea correcta
 import Login from "../pages/Login/login.jsx";
 
 export const routesglobal = [
@@ -23,15 +22,11 @@ export const routesglobal = [
     ],
   },
   {
-    path: "/admin",
+    path: "/",
     element: <NavbarAdmin />,
     children: [
       {
-        path: "", // Ruta raíz de /admin, omite /admin aquí
-        element: <PageAdmin />, // Asegúrate de usar el nombre correcto del componente
-      },
-      {
-        path: "listado-citas", // Ruta relativa bajo /admin
+        path: "listado-citas",
         element: <Listadocitas />, // Asegúrate de usar el nombre correcto del componente
       },
     ],

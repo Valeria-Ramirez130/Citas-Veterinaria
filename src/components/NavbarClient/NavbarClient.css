@@ -8,7 +8,7 @@
 
 /* Asegura que la navbar ocupe todo el ancho de la pantalla */
 .navbar {
-  padding: 8px 12px; /* Reduce el padding para hacer el navbar más compacto */
+  padding: 8px 20px; /* Aumenta el padding para dar más espacio en los extremos */
   width: 100%;
   position: fixed;
   top: 0;
@@ -48,7 +48,8 @@
   font-weight: bold;
   transition: background-color 0.3s;
   cursor: pointer;
-  margin-left: auto; /* Asegura que esté a la derecha */
+  margin-left: 20px; /* Agrega margen a la izquierda para separarlo de los otros elementos */
+  margin-right: 20px; /* Agrega margen a la derecha para que no esté tan pegado a la esquina */
 }
 
 /* Cambia el color del botón al pasar el mouse */
@@ -80,6 +81,6 @@
 
   .navbar-btn {
     position: relative; /* Cambiar a relativo en móviles */
-    margin-left: auto;
+    margin-left: 6px; /* Mantener espacio en móviles */
   }
 }

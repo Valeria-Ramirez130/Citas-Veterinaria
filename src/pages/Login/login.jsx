@@ -15,7 +15,7 @@ export function Login() {
       setError("Por favor, complete todos los campos.");
     } else {
       // Redirige al usuario a /Admin si los campos están completos
-      navigate("/Admin");
+      navigate("/listado-citas");
     }
   };
 

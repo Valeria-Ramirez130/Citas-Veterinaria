@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import iconoveterinario from "../../img/iconoveterinario.png";
-import "./NavbarAdmin.css"; // Importar los estilos
+import "./NavbarAdmin.css";
 
 export default function NavbarAdmin() {
   return (
@@ -27,11 +27,6 @@ export default function NavbarAdmin() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Inicio
-              </Link>
-            </li>
             <li className="nav-item">
               <Link className="nav-link" to="listado-citas">
                 Listado Citas
