@@ -26,7 +26,7 @@ export default function NavbarClient() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav me-auto">
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Inicio
@@ -38,11 +38,10 @@ export default function NavbarClient() {
               </Link>
             </li>
           </ul>
+          <Link to="/login" className="navbar-btn">
+            Entrar
+          </Link>
         </div>
-        <Link to="/login" className="navbar-btn">
-          Entrar
-        </Link>{" "}
-        {/* Usa Link en lugar de button */}
       </nav>
       <section>
         <Outlet />

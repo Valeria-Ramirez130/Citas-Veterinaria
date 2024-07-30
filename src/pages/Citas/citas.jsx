@@ -138,7 +138,10 @@ export default function Citas() {
               required
             />
           </label>
-          <button type="submit" className="button btn primary request-button">
+          <button
+            type="submit"
+            className="button btn primary request-button solicitar-cita-button"
+          >
             SOLICITAR CITA
           </button>
         </form>

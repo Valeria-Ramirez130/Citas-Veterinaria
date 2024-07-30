@@ -1,0 +1,18 @@
+.table-responsive {
+    overflow-x: auto; /* Permite el desplazamiento horizontal en dispositivos móviles */
+  }
+  
+  .table {
+    width: 100%; /* Asegura que la tabla ocupe el ancho completo del contenedor */
+  }
+  
+  .table th, .table td {
+    text-align: center; /* Centra el texto en las celdas */
+  }
+  
+  @media (max-width: 768px) {
+    .table th, .table td {
+      font-size: 0.875rem; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
+  }
+  

@@ -98,7 +98,10 @@ button.request-button:hover {
     /* El color del texto en negrita se mantiene igual */
 }
 
-
+button.request-button.solicitar-cita-button {
+    margin-left: 20px; /* Ajusta este valor según sea necesario */
+  }
+  
 
 .icono-agendar {
     width: 25px; /* Tamaño del icono */
