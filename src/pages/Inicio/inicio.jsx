@@ -20,7 +20,7 @@ function Inicio() {
         </button>
       </div>
       <footer className="inicio-footer">
-        &copy; 2024 Valeria Ramirez Marin
+        &copy; 2024 Valeria Ramirez. Todos los derechos reservados.
       </footer>
     </div>
   );
