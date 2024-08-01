@@ -19,6 +19,9 @@ function Inicio() {
           Programar cita
         </button>
       </div>
+      <footer className="inicio-footer">
+        &copy; 2024 Valeria Ramirez Marin
+      </footer>
     </div>
   );
 }

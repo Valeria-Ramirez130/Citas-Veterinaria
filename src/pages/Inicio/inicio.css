@@ -92,6 +92,27 @@ body.inicio-active .main-container {
 .inicio-button:hover {
   background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
 }
+/* Estilo para el footer */
+.inicio-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+  color: #fff; /* Color del texto */
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.875rem; /* Tamaño de fuente */
+}
+
+/* Estilos responsivos para el footer */
+@media (max-width: 768px) {
+  .inicio-footer {
+    font-size: 0.75rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+    padding: 8px; /* Ajusta el relleno en pantallas pequeñas */
+  }
+}
+
 
 /* Estilos responsivos para dispositivos móviles */
 @media (max-width: 768px) {
